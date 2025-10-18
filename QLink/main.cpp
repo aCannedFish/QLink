@@ -1,7 +1,3 @@
-// main.cpp
-// QLink连连看游戏主程序入口文件
-// 程序启动入口，负责初始化Qt应用程序并显示主菜单界面
-
 #include "menu.h"
 #include <QtWidgets/QApplication>
 

@@ -1,7 +1,3 @@
-// menu.h
-// 主菜单界面头文件
-// 定义主菜单窗口类，负责游戏的主界面显示和模式选择
-
 #pragma once
 
 #include <QtWidgets/QMainWindow>

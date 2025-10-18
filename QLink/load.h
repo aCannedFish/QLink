@@ -1,7 +1,3 @@
-// load.h
-// 游戏存档系统头文件
-// 定义连连看游戏的存档和读档功能，包含游戏数据结构和文件操作函数
-
 #pragma once
 #include <QString>
 #include <QVector>

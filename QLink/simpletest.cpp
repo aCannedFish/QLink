@@ -1,7 +1,3 @@
-// simpletest.cpp
-// 测试类实现文件，用于测试单人模式和双人模式中的连接判定功能
-// 主要测试路径查找算法的正确性
-
 #include "simpletest.h"
 #include <QTest>
 #include <QVector>

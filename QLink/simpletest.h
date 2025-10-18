@@ -1,6 +1,3 @@
-// simpletest.h
-// 测试类，用于测试单人模式和双人模式中的连接判定功能
-// 继承自QObject以使用Qt测试框架，主要测试路径查找算法的正确性
 #pragma once
 
 #include <QObject>

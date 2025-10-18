@@ -1,7 +1,3 @@
-// simplemode.h
-// 单机模式游戏窗口头文件
-// 定义连连看游戏单机模式的窗口类，包含游戏逻辑、方块管理、道具系统等
-
 #pragma once
 
 #include <QMainWindow>

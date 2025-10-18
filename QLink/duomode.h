@@ -1,7 +1,3 @@
-// duomode.h
-// 双人模式游戏窗口头文件
-// 定义连连看游戏双人模式的窗口类，包含双人游戏逻辑、方块管理、道具系统等
-
 #pragma once
 
 #include <QMainWindow>

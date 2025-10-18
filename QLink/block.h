@@ -1,7 +1,3 @@
-// block.h
-// 游戏方块类头文件
-// 定义连连看游戏中的方块类，包含方块的位置、状态、形状等属性
-
 #pragma once
 #include <QWidget>
 #include <QRectF>

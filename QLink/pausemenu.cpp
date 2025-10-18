@@ -1,9 +1,3 @@
-/**
- * @file pausemenu.cpp
- * @brief 游戏暂停菜单实现文件
- * @details 实现游戏暂停菜单的功能，包括界面初始化和信号槽连接
- */
-
 #include "pausemenu.h"
 #include <QCloseEvent>
 
@@ -39,10 +33,10 @@ PauseMenu::PauseMenu(QWidget *parent)
     connect(ui->loadBtn, &QPushButton::clicked, this, &PauseMenu::loadClicked);
 }
 
-/**
- * @brief 暂停菜单析构函数
- * @details 清理暂停菜单资源，删除UI对象
- */
+
+// 暂停菜单析构函数
+// 清理暂停菜单资源，删除UI对象
+ 
 PauseMenu::~PauseMenu()
 {
     delete ui; // 删除UI对象

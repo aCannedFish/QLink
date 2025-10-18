@@ -1,7 +1,3 @@
-// pausemenu.h
-// 游戏暂停菜单头文件
-// 定义游戏暂停时显示的菜单界面，提供继续、退出、保存、加载等功能
-
 #pragma once
 
 #include <QDialog>

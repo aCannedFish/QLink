@@ -1,7 +1,3 @@
-// load.cpp
-// 游戏存档系统实现文件
-// 实现连连看游戏的存档和读档功能，包括游戏数据结构和文件操作函数
-
 #include "load.h"
 #include <QFile>
 #include <QTextStream>

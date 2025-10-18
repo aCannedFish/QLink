@@ -1,18 +1,18 @@
-F:\Project\Qt\QLink - 副本\QLink\block.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\block.obj
-F:\Project\Qt\QLink - 副本\QLink\duomode.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\duomode.obj
-F:\Project\Qt\QLink - 副本\QLink\item.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\item.obj
-F:\Project\Qt\QLink - 副本\QLink\load.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\load.obj
-F:\Project\Qt\QLink - 副本\QLink\pausemenu.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\pausemenu.obj
-F:\Project\Qt\QLink - 副本\QLink\player.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\player.obj
-F:\Project\Qt\QLink - 副本\QLink\simplemode.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\simplemode.obj
-F:\Project\Qt\QLink - 副本\QLink\simpletest.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\simpletest.obj
-F:\Project\Qt\QLink - 副本\QLink\menu.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\menu.obj
-F:\Project\Qt\QLink - 副本\QLink\main.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\main.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\rcc\qrc_images.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qrc_images.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_menu.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_menu.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_block.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_block.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_player.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_player.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_duomode.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_duomode.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_simplemode.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_simplemode.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_simpletest.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_simpletest.obj
-F:\Project\Qt\QLink - 副本\QLink\x64\Debug\qt\moc\moc_pausemenu.cpp;F:\Project\Qt\QLink - 副本\QLink\x64\Debug\moc_pausemenu.obj
+F:\Project\Qt\QLink\QLink\block.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\block.obj
+F:\Project\Qt\QLink\QLink\duomode.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\duomode.obj
+F:\Project\Qt\QLink\QLink\item.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\item.obj
+F:\Project\Qt\QLink\QLink\load.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\load.obj
+F:\Project\Qt\QLink\QLink\pausemenu.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\pausemenu.obj
+F:\Project\Qt\QLink\QLink\player.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\player.obj
+F:\Project\Qt\QLink\QLink\simplemode.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\simplemode.obj
+F:\Project\Qt\QLink\QLink\simpletest.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\simpletest.obj
+F:\Project\Qt\QLink\QLink\menu.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\menu.obj
+F:\Project\Qt\QLink\QLink\main.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\main.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\rcc\qrc_images.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\qrc_images.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_menu.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_menu.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_block.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_block.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_player.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_player.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_duomode.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_duomode.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_simplemode.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_simplemode.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_simpletest.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_simpletest.obj
+F:\Project\Qt\QLink\QLink\x64\Debug\qt\moc\moc_pausemenu.cpp;F:\Project\Qt\QLink\QLink\x64\Debug\moc_pausemenu.obj

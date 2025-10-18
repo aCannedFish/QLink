@@ -1,7 +1,3 @@
-// item.h
-// 游戏道具类头文件
-// 定义连连看游戏中的道具系统，包含各种道具类型和道具类
-
 #pragma once
 #include <QPixmap>
 #include <QRectF>

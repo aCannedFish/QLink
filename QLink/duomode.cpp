@@ -1,7 +1,3 @@
-// duomode.cpp
-// 双人模式游戏窗口实现文件
-// 实现连连看游戏双人模式的各种功能，包括构造、游戏逻辑、方块管理、道具系统等
-
 #include "duomode.h"
 #include <QString>
 #include <QPixmap>

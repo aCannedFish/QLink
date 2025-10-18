@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>F:\Project\Qt\QLink - 副本\x64\Debug\QLink.exe</FullPath>
+      <FullPath>F:\Project\Qt\QLink\x64\Debug\QLink.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

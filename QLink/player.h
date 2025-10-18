@@ -1,7 +1,3 @@
-// player.h
-// 游戏玩家类头文件
-// 定义连连看游戏中的玩家类，包含玩家的位置、分数、状态等属性
-
 #pragma once
 #include <QWidget>
 #include <QRectF>

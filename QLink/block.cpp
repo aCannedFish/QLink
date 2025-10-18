@@ -1,7 +1,3 @@
-// block.cpp
-// 游戏方块类实现文件
-// 实现连连看游戏中方块类的各种功能，包括构造、状态管理和坐标操作
-
 #include "block.h"
 #include <QDebug>
 

@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>&quot;F:\Project\Qt\QLink - ??\QLink\x64\Release\qt\qmake&quot;;D:\Apps\Qt\6.9.1\msvc2022_64\include;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtMultimediaWidgets;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtWidgets;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtMultimedia;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtGui;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtQuickTest;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtTest;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtNetwork;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtCore;&quot;F:\Project\Qt\QLink - ??\QLink\x64\Release\qt\qmake&quot;;/include;D:\Apps\Qt\6.9.1\msvc2022_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Project\Qt\QLink\QLink\x64\Release\qt\qmake;D:\Apps\Qt\6.9.1\msvc2022_64\include;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtMultimediaWidgets;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtWidgets;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtMultimedia;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtGui;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtQuickTest;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtTest;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtNetwork;D:\Apps\Qt\6.9.1\msvc2022_64\include\QtCore;F:\Project\Qt\QLink\QLink\x64\Release\qt\qmake;/include;D:\Apps\Qt\6.9.1\msvc2022_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -43,7 +43,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ObjectFileName>.\</ObjectFileName>
       <Optimization>MaxSpeed</Optimization>
-      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_QMLTEST_LIB;QT_TESTLIB_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR=&quot;F:/Project/Qt/QLink - 副本/QLink/x64/Release/qt/qmake&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_QMLTEST_LIB;QT_TESTLIB_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR=&quot;F:/Project/Qt/QLink/QLink/x64/Release/qt/qmake&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <ProgramDataBaseFileName></ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -72,7 +72,7 @@
       <WarningLevel>0</WarningLevel>
     </Midl>
     <ResourceCompile>
-      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_QMLTEST_LIB;QT_TESTLIB_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR=&quot;F:/Project/Qt/QLink - 副本/QLink/x64/Release/qt/qmake&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_MULTIMEDIAWIDGETS_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_QMLTEST_LIB;QT_TESTLIB_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR=&quot;F:/Project/Qt/QLink/QLink/x64/Release/qt/qmake&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

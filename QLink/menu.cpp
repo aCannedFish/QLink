@@ -1,7 +1,3 @@
-// menu.cpp
-// 主菜单界面实现文件
-// 实现主菜单窗口的功能，包括界面初始化、音乐控制和模式切换
-
 #include <QWidget>
 #include <QPalette>
 #include <QMediaPlayer>
