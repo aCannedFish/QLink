@@ -1,0 +1,25 @@
+﻿   Qt/MSBuild: 3.4.1.0
+   Qt: 6.9.1
+  block.cpp
+  duomode.cpp
+  item.cpp
+  load.cpp
+  main.cpp
+  menu.cpp
+  pausemenu.cpp
+  player.cpp
+  simplemode.cpp
+  simpletest.cpp
+  qrc_images.cpp
+  moc_block.cpp
+  moc_duomode.cpp
+  moc_menu.cpp
+  moc_pausemenu.cpp
+  moc_player.cpp
+  moc_simplemode.cpp
+  moc_simpletest.cpp
+  正在生成代码
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 1322 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  QLink.vcxproj -> F:\Project\Qt\QLink - 副本\x64\Release\QLink.exe
