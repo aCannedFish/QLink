@@ -1,8 +1,7 @@
 .vs/
 x64/
-.vs/
-build/
 Release/
 Debug/
 *.user
 *.suo
+x64
