@@ -1,7 +1,3 @@
 .vs/
-x64/
-Release/
-Debug/
 *.user
 *.suo
-x64
