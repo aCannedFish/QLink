@@ -1,4 +1,9 @@
 .vs/
 x64/
+QLink/x64/
 *.user
 *.suo
+*.aps
+*.vcxproj*
+*.user*
+*.hint
