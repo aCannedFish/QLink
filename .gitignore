@@ -1,6 +1,7 @@
 .vs/
 x64/
 QLink/x64/
+QLink/build/
 *.user
 *.suo
 *.aps

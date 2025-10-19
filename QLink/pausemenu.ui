@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>PauseMenu</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/images/icon.png</normaloff>:/images/images/icon.png</iconset>
+  </property>
   <widget class="QPushButton" name="continueBtn">
    <property name="geometry">
     <rect>
@@ -79,6 +83,8 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>

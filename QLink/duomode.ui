@@ -17,8 +17,8 @@
    <string>DuoMode</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>images/icon.png</normaloff>images/icon.png</iconset>
+   <iconset resource="images.qrc">
+    <normaloff>:/images/images/icon.png</normaloff>:/images/images/icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="exitBtn">
@@ -64,6 +64,8 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>
