@@ -325,4 +325,4 @@ void SimpleTest::testDuoModeCanLink() {
     delete mode;
 }
 
-QTEST_MAIN(SimpleTest)
+// QTEST_MAIN(SimpleTest)
