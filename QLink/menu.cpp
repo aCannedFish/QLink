@@ -18,7 +18,7 @@ Menu::Menu(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() & ~Qt::WindowCloseButtonHint);
-    ui->playControlBtn->setStyleSheet("QPushButton{border-image: url(:/images/images/itsmygo.png);}");
+    ui->playControlBtn->setStyleSheet("QPushButton{border-image: url(:/images/images/icon.png);}");
     setStyleSheet("Menu { background-image: url(:/images/images/background.png); }");
     ui->appTitle->setStyleSheet("QLabel { color: rgb(147, 218, 100); }");
     ui->appTitle2->setStyleSheet("QLabel { color: rgba(255,255,255,204); }");
@@ -29,7 +29,7 @@ Menu::Menu(QWidget *parent)
     mediaPlayer = new QMediaPlayer(this);
     QAudioOutput* audioOutput = new QAudioOutput(this);
     mediaPlayer->setAudioOutput(audioOutput);
-    mediaPlayer->setSource(QUrl("qrc:/images/music/music2.mp3"));
+    mediaPlayer->setSource(QUrl("qrc:/music/music/music2.mp3"));
     mediaPlayer->setLoops(QMediaPlayer::Infinite);
     audioOutput->setVolume(0.5);
     mediaPlayer->play();

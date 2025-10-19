@@ -1,9 +1,6 @@
 <RCC>
     <qresource prefix="/images">
         <file>images/background.png</file>
-        <file>images/itsmygo.png</file>
-        <file>music/music1.mp3</file>
-        <file>music/music2.mp3</file>
         <file>images/1-1.png</file>
         <file>images/1-2.png</file>
         <file>images/2-1.png</file>
@@ -27,5 +24,6 @@
         <file>images/Time.png</file>
         <file>images/Dizzy.png</file>
         <file>images/Freeze.png</file>
+        <file>images/icon.png</file>
     </qresource>
 </RCC>

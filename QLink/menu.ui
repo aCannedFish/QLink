@@ -32,8 +32,8 @@
    <string>Menu</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>images/itsmygo.png</normaloff>images/itsmygo.png</iconset>
+   <iconset resource="images.qrc">
+    <normaloff>:/images/images/icon.png</normaloff>:/images/images/icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="appTitle">

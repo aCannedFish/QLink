@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>DuoMode</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/icon.png</normaloff>images/icon.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="exitBtn">
     <property name="geometry">
