@@ -3,22 +3,15 @@
 #include <QVector>
 #include <QPoint>
 
-// 创建测试用的SimpleMode对象
-// 返回配置好的SimpleMode对象指针
 SimpleMode* SimpleTest::createTestSimpleMode() {
     return new SimpleMode(nullptr);
 }
 
-// 创建测试用的DuoMode对象
-// 返回配置好的DuoMode对象指针
 DuoMode* SimpleTest::createTestDuoMode() {
     return new DuoMode(nullptr);
 }
 
 // 设置测试方块布局
-// mode: 游戏模式对象（SimpleMode或DuoMode）
-// layout: 布局数组，0表示空地，1表示有方块
-// 根据给定的布局数组设置测试场景的方块分布
 template<typename T>
 void SimpleTest::setupTestLayout(T* mode, const int layout[14][14]) {
     for (int i = 2; i < 12; ++i) {
@@ -332,4 +325,4 @@ void SimpleTest::testDuoModeCanLink() {
     delete mode;
 }
 
-// QTEST_MAIN(SimpleTest)
+QTEST_MAIN(SimpleTest)

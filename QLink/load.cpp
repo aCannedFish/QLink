@@ -5,12 +5,6 @@
 // 保存游戏到文件
 // path: 存档文件路径
 // data: 要保存的游戏数据
-// 返回保存是否成功
-// 将游戏状态保存到指定的文本文件中：
-// 1. 保存游戏模式、时间、分数
-// 2. 保存玩家位置
-// 3. 保存方块形状和状态矩阵
-// 4. 保存道具信息
 bool saveGame(const QString& path, const SaveData& data) {
     QFile file(path);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) return false;
@@ -50,9 +44,6 @@ bool saveGame(const QString& path, const SaveData& data) {
 // 从文件加载游戏
 // path: 存档文件路径
 // data: 用于存储加载的游戏数据
-// 返回加载是否成功
-// 从指定的文本文件中读取游戏状态，文件格式与saveGame函数对应：
-// 按照保存时的顺序依次读取各项数据，并进行数据验证
 bool loadGame(const QString& path, SaveData& data) {
     QFile file(path);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) return false;

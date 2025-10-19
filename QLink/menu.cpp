@@ -11,7 +11,6 @@
 
 // 主菜单构造函数
 // parent: 父窗口指针
-// 初始化主菜单界面，包括窗口属性、背景、按钮样式、音乐播放器和信号槽
 Menu::Menu(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MenuClass())

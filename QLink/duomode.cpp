@@ -20,7 +20,6 @@
 #include <QMessageBox>
 
 // 构造函数
-// parent: 父窗口指针，默认为nullptr
 // saveData: 存档数据指针，用于加载游戏状态，默认为nullptr
 // 初始化双人模式游戏窗口，设置游戏界面和逻辑
 DuoMode::DuoMode(QWidget *parent, const SaveData* saveData)

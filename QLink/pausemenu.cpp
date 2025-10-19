@@ -1,14 +1,6 @@
 #include "pausemenu.h"
 #include <QCloseEvent>
 
-/**
- * @brief 暂停菜单构造函数
- * @param parent 父窗口指针
- * @details 初始化暂停菜单界面：
- * 1. 设置UI界面
- * 2. 配置窗口属性（禁用关闭按钮，设置为模态对话框）
- * 3. 连接按钮信号到对应的槽函数
- */
 PauseMenu::PauseMenu(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::PauseMenuClass())

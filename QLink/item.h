@@ -4,7 +4,6 @@
 #include <QPoint>
 #include <QWidget>
 
-// 道具类型枚举
 // 定义游戏中所有可用的道具类型
 enum class ItemType {
     AddTime,    // 增加时间道具：+1秒

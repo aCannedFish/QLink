@@ -21,7 +21,6 @@
 // 构造函数
 // parent: 父窗口指针，默认为nullptr
 // saveData: 存档数据指针，用于加载游戏状态，默认为nullptr
-// 初始化单机模式游戏窗口，设置游戏界面和逻辑
 SimpleMode::SimpleMode(QWidget *parent, const SaveData* saveData)
     : QMainWindow(parent)
     , ui(new Ui::SimpleModeClass())
@@ -127,7 +126,6 @@ SimpleMode::SimpleMode(QWidget *parent, const SaveData* saveData)
 }
 
 // 析构函数
-// 清理游戏资源，停止定时器，删除动态分配的对象
 SimpleMode::~SimpleMode()
 {
     for (Item* prop : props) delete prop;
@@ -135,7 +133,6 @@ SimpleMode::~SimpleMode()
 }
 
 // 更新分数
-// delta: 分数增量
 void SimpleMode::updateScore(int delta) {
     score += delta;
     updateScoreLabel();
@@ -147,7 +144,6 @@ void SimpleMode::updateScoreLabel() {
 }
 
 // 检查游戏是否结束
-// 如果没有可消除的方块对，游戏结束
 void SimpleMode::checkGameOver() {
     for (int i = 2; i < rows-2; ++i) {
         for (int j = 2; j < cols-2; ++j) {
@@ -172,7 +168,6 @@ void SimpleMode::checkGameOver() {
 }
 
 // 游戏进度更新
-// 更新游戏状态，包括时间、分数等
 void SimpleMode::progress()
 {
     if (timeLeft > 0) {
@@ -189,7 +184,6 @@ void SimpleMode::progress()
 }
 
 // 洗牌功能
-// 重新排列所有方块，打乱游戏布局
 void SimpleMode::shuffle()
 {
     QVector<Block*> nonEmptyBlocks;
@@ -229,7 +223,6 @@ void SimpleMode::initTextures()
 }
 
 // 绘制消除路径
-// painter: QPainter对象
 void SimpleMode::drawLinkPath(QPainter& painter)
 {
     if (linkPath.size() < 2) return;
@@ -274,7 +267,6 @@ void SimpleMode::generateProp() {
 }
 
 // 绘制道具
-// painter: QPainter对象
 void SimpleMode::drawProps(QPainter& painter) {
     for (Item* prop : props)
         if (prop->isVisible())
@@ -282,7 +274,6 @@ void SimpleMode::drawProps(QPainter& painter) {
 }
 
 // 绘制事件
-// event: 绘制事件对象
 void SimpleMode::paintEvent(QPaintEvent* event)
 {
     QPainter painter(this);
@@ -321,7 +312,6 @@ void SimpleMode::paintEvent(QPaintEvent* event)
 }
 
 // 键盘按键事件
-// event: 键盘事件对象
 void SimpleMode::keyPressEvent(QKeyEvent* event)
 {
     if (event->key() == Qt::Key_W || event->key() == Qt::Key_Up) handleMove(0, -1);
@@ -331,8 +321,6 @@ void SimpleMode::keyPressEvent(QKeyEvent* event)
 }
 
 // 玩家移动后检测道具
-// dx: x方向移动量
-// dy: y方向移动量
 void SimpleMode::handleMove(int dx, int dy) {
     linkPath.clear();
     int nx = player->getXInMap() + dx;
@@ -351,8 +339,6 @@ void SimpleMode::handleMove(int dx, int dy) {
 }
 
 // 激活方块逻辑
-// bx: 方块x坐标
-// by: 方块y坐标
 void SimpleMode::tryActivateBlock(int bx, int by)
 {
     linkPath.clear();
@@ -382,9 +368,6 @@ void SimpleMode::tryActivateBlock(int bx, int by)
 }
 
 // 判断两方块是否可以消除
-// block1: 第一个方块指针
-// block2: 第二个方块指针
-// 返回值: 是否可以消除
 bool SimpleMode::canEliminate(Block* block1, Block* block2) {
     if (!block1 || !block2) return false;
     int x1 = block1->getMapX();
@@ -410,11 +393,6 @@ bool SimpleMode::canEliminate(Block* block1, Block* block2) {
 }
 
 // 判断两方块是否可以通过直线连接
-// x1: 第一个方块的x坐标
-// y1: 第一个方块的y坐标
-// x2: 第二个方块的x坐标
-// y2: 第二个方块的y坐标
-// 返回值: 是否可以通过直线连接
 bool SimpleMode::canLinkInLine(int x1, int y1, int x2, int y2)
 {
     if (x1 == x2) {
@@ -438,12 +416,6 @@ bool SimpleMode::canLinkInLine(int x1, int y1, int x2, int y2)
 }
 
 // 判断两方块是否可以通过一个拐点连接
-// x1: 第一个方块的x坐标
-// y1: 第一个方块的y坐标
-// x2: 第二个方块的x坐标
-// y2: 第二个方块的y坐标
-// path: 用于存储连接路径的指针，可以为nullptr
-// 返回值: 是否可以通过一个拐点连接
 bool SimpleMode::canLinkWithOneCorner(int x1, int y1, int x2, int y2, QVector<QPoint>* path) {
     if (blocks[y2][x1]->getState() == 0 &&
         canLinkInLine(x1, y1, x1, y2) &&
@@ -471,12 +443,6 @@ bool SimpleMode::canLinkWithOneCorner(int x1, int y1, int x2, int y2, QVector<QP
 }
 
 // 判断两方块是否可以通过两个拐点连接
-// x1: 第一个方块的x坐标
-// y1: 第一个方块的y坐标
-// x2: 第二个方块的x坐标
-// y2: 第二个方块的y坐标
-// path: 用于存储连接路径的指针，可以为nullptr
-// 返回值: 是否可以通过两个拐点连接
 bool SimpleMode::canLinkWithTwoCorners(int x1, int y1, int x2, int y2, QVector<QPoint>* path) {
     for (int i = 0; i < rows; ++i) {
         if (i == y1 || i == y2) continue;
@@ -514,12 +480,6 @@ bool SimpleMode::canLinkWithTwoCorners(int x1, int y1, int x2, int y2, QVector<Q
 }
 
 // 判断两方块是否可以连接
-// x1: 第一个方块的x坐标
-// y1: 第一个方块的y坐标
-// x2: 第二个方块的x坐标
-// y2: 第二个方块的y坐标
-// path: 用于存储连接路径的指针，可以为nullptr
-// 返回值: 是否可以连接
 bool SimpleMode::canLink(int x1, int y1, int x2, int y2, QVector<QPoint>* path) {
     if (canLinkInLine(x1, y1, x2, y2)) {
         if (path) {
@@ -539,7 +499,6 @@ bool SimpleMode::canLink(int x1, int y1, int x2, int y2, QVector<QPoint>* path) 
 }
 
 // 退出按钮点击槽函数
-// 处理退出按钮点击事件
 void SimpleMode::on_exitBtn_clicked()
 {
     progressTimer->stop();
@@ -548,7 +507,6 @@ void SimpleMode::on_exitBtn_clicked()
 }
 
 // 暂停游戏
-// 暂停游戏并显示暂停菜单
 void SimpleMode::pauseGame() {
     if (isPaused) return;
     isPaused = true;
@@ -566,7 +524,6 @@ void SimpleMode::pauseGame() {
 }
 
 // 恢复游戏
-// 恢复游戏状态，关闭暂停菜单
 void SimpleMode::resumeGame() {
     isPaused = false;
     if (progressTimer) progressTimer->start();
@@ -605,7 +562,6 @@ void SimpleMode::onLoadBtnClicked() {
 }
 
 // 获取存档数据
-// 返回值: 存档数据对象
 SaveData SimpleMode::getSaveData() const {
     SaveData data;
     data.mode = GameMode::Single;
@@ -634,7 +590,6 @@ SaveData SimpleMode::getSaveData() const {
 }
 
 // 应用存档数据
-// data: 存档数据对象
 void SimpleMode::applySaveData(const SaveData& data) {
     timeLeft = data.timeLeft;
     score = data.score1;
