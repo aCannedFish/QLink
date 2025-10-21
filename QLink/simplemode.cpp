@@ -348,19 +348,37 @@ void SimpleMode::tryActivateBlock(int bx, int by)
         activeBlock = blk;
         player->setActive(true);
     } else {
+        // 激活不同方块使旧的方块焦点消除，不对新方块进行操作
+        // if (blk == activeBlock) {
+        //     blk->setState(1);
+        //     activeBlock = nullptr;
+        //     player->setActive(false);
+        // } else {
+        //     if (canEliminate(activeBlock, blk)) {
+        //         player->setActive(false);
+        //         activeBlock = nullptr;
+        //     } else {
+        //         activeBlock->setState(1);
+        //         blk->setState(1);
+        //         activeBlock = nullptr;
+        //         player->setActive(false);
+        //     }
+        // }
+
+        // 激活不同方块使旧的方块焦点消除并移动到新的方块
         if (blk == activeBlock) {
             blk->setState(1);
             activeBlock = nullptr;
-            player->setActive(false);
+            player-> setActive(false);
         } else {
             if (canEliminate(activeBlock, blk)) {
-                player->setActive(false);
+                player -> setActive(false);
                 activeBlock = nullptr;
             } else {
                 activeBlock->setState(1);
-                blk->setState(1);
-                activeBlock = nullptr;
-                player->setActive(false);
+                blk->setState(2);
+                activeBlock = blk;
+                player->setActive(true);
             }
         }
     }

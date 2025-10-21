@@ -463,9 +463,9 @@ void DuoMode::tryActivateBlock(int bx, int by, int playerId)
                 updateScore(2, playerId);
             } else {
                 activeBlock->setState(1);
-                blk->setState(1);
-                activeBlock = nullptr;
-                player->setActive(false);
+                blk->setState(2);
+                activeBlock = blk;
+                player->setActive(true);
             }
         }
     }
